@@ -1,0 +1,16 @@
+title: I love to do sports
+description: I dont know what to do in this app. Can u help me?
+template:
+  repo: i-love-to-do-sports-template
+  name: i-love-to-do-sports
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
